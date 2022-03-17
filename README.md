@@ -51,7 +51,7 @@ from loaders.cloud_loaders.iterable_file_loaders.google.audio_loaders import Aud
 if __name__ == "__main__":
     with AudioGoogleLoader(bucket_name="bucket-name-here",
                            bucket_file_key="path/to/the/file") as test_loader:
-        for elem in test_loader:
+        for elem in test_loader:  # list-like object
             print(elem)
     print("")
 ```
