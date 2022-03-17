@@ -92,5 +92,28 @@ if __name__ == "__main__":
 ```
 
 </details>
+<details>
+<summary>Audio serializers</summary>
+
+```
+import os
+from loaders.local_loaders.iterable_file_loaders.audio_loaders import AudioReader
+from serializers.cloud_serializers.google.audio_serializers import AudioGoogleSerializer
+
+if __name__ == "__main__":
+    with AudioReader(r"D:\praca\esently\taski\ML-43\files\data\a.wav") as wav:
+        with AudioGoogleSerializer(wav.get_file_buffer(), wav.sampling_rate, 'wav',
+                                      tmp_folder_path="/tmp/") as test_serializer:
+            test_serializer.serialize("bucket-name-here", "path/to/the/file")
+
+```
+
+</details>
+</details>
+</details>
+<details>
+<summary><b>Local</b></summary>
+<details>
+<summary>Video loaders</summary>
 </details>
 </details>
