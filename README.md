@@ -1,6 +1,6 @@
 # Cloud files toolkit
-The assumption of the repository is to create a set of classes responsible for loading and uploading files from buckets. All classes implementations are kept in a similar manner.
-
+A set of simple tools for loading files and serializing on popular clouds.
+The repository is in no way related to cloud service providers. The repository is only an implementation using already existing libraries prepared by cloud service providers.
 
 ## Installation
 Requirements are being created, due to the different types of files that are included in the implementation, there are many references to different libraries in the code. It is necessary to organize the code and requirements in a modular way.
